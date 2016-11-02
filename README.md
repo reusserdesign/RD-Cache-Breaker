@@ -8,5 +8,5 @@ Appends the last modified time (unix timestamp) to the specified file:
 This plugin will determine the time that the file was last modified and append that unix timestamp to the file path using the separator, like so:
 
 ```html
-/path/to/file?1234567890
+<link href="/path/to/file?1234567890" rel="stylesheet" />
 ```
