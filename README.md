@@ -1,5 +1,6 @@
-# RD-Cache-Breaker
-Appends the last modified time (unix timestamp) to the specified file:
+# RD Cache Breaker
+
+ExpressionEngine 3 and 4 compatible. Appends the last modified time (unix timestamp) to the specified file:
 
 ```html
 <link href="{exp:rd_cache_breaker file='/path/to/file' separator='?'}" rel="stylesheet" />
