@@ -1,5 +1,7 @@
 # RD Cache Breaker
 
+![](https://img.shields.io/badge/ExpressionEngine-3%2B-1883E9.svg)
+
 ExpressionEngine 3 and 4 compatible. Appends the last modified time (unix timestamp) to the specified file:
 
 ```html
