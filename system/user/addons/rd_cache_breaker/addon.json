@@ -1,0 +1,18 @@
+{
+	"tags": {
+		"exp:rd_cache_breaker": {
+			"documentation": "Appends the last modified time (unix timestamp) to the file specified in the 'file' parameter.",
+			"hasClosingTag": false,
+			"parameters": {
+				"file": {
+					"documentation": "The path to the file for which you want to break/refresh the browser cache.",
+					"detail": "Type: string"
+				},
+				"separator": {
+					"documentation": "Character(s) used to separate the file path from the timestamp.",
+					"detail": "Type: string\nDefault: '?'"
+				}
+			}
+		}
+	}
+}
