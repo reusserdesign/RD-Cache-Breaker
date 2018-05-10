@@ -1,6 +1,6 @@
 # RD Cache Breaker
 
-![](https://img.shields.io/badge/ExpressionEngine-3%2B-1883E9.svg)
+![supports ExpressionEngine 3 and higher](https://img.shields.io/badge/ExpressionEngine-3%2B-3784B0.svg)
 
 ExpressionEngine 3 and 4 compatible. Appends the last modified time (unix timestamp) to the specified file:
 
