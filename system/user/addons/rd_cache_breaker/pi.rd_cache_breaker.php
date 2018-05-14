@@ -2,7 +2,7 @@
 
 /**
  * RD Cache Breaker
- * 
+ *
  * @package		ExpressionEngine
  * @category	Plugin
  * @author		Jarrod D Nix, Reusser Design
@@ -13,7 +13,7 @@ class Rd_cache_breaker
 {
 
 	public $return_data = "";
-	
+
 	// --------------------------------------------------------------------
 
 	/**
@@ -34,9 +34,10 @@ class Rd_cache_breaker
 			$file		= ee()->TMPL->fetch_param('file') ? ee()->TMPL->fetch_param('file') : FALSE;
 			$separator	= ee()->TMPL->fetch_param('separator') ? ee()->TMPL->fetch_param('separator') : "?";
 
-			if($file && file_exists($_SERVER['DOCUMENT_ROOT'].$file)) {
+			$tempPath = rtrim(FCPATH, "/");
+			if($file && file_exists($tempPath.$file)) {
 				$return = $file;
-				$time = filemtime($_SERVER['DOCUMENT_ROOT'].$file);
+				$time = filemtime($tempPath.$file);
 				if ($time !== FALSE)
 				{
 					$return .= $separator . $time;
